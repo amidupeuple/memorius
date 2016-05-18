@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #FCFFFF;
+    text-align: center;
+}
+
+#footerString {
+    position: absolute;
+    bottom:30px;
+    width:100%;
+}

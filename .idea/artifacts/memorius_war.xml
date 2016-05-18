@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="memorius:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="memorius-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="memorius:war exploded" />
+    </root>
+  </artifact>
+</component>
