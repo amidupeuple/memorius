@@ -1,5 +1,4 @@
 <br/>
-<h1 id="mainBodyHeader">Memorius</h1>
+<h1 class="text-muted" id="mainBodyHeader">Memorius</h1>
 <br/>
-<br/>
-<br/>
+

@@ -44,10 +44,14 @@ public class MemoriusMainController {
             modelAndView.addObject("msg", "You've been logged out successfully.");
         }
 
-
-
         modelAndView.setViewName("login");
 
         return modelAndView;
+    }
+
+
+    @RequestMapping(value = "addGoal", method = RequestMethod.GET)
+    public String showAddGoal() {
+        return "addGoal";
     }
 }
