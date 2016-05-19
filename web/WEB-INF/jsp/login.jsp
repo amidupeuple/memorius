@@ -2,8 +2,9 @@
 
 <%@ taglib prefix="custom" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
-    
+
     <jsp:include page="/WEB-INF/jsp/fragments/htmlHeader.jsp"/>
 
     <body>
@@ -12,14 +13,14 @@
         <c:url value="/login" var="loginUrl"/>
 
         <form action="${loginUrl}" method="post">
-            <c:if test="${param.error != null}">
+            <c:if test="${not empty error}">
                 <p>
-                    Invalid username and password.
+                    ${error}
                 </p>
             </c:if>
-            <c:if test="${param.logout != null}">
+            <c:if test="${not empty msg}">
                 <p>
-                    You have been logged out.
+                    ${msg}
                 </p>
             </c:if>
             <p>
@@ -28,7 +29,7 @@
             </p>
             <p>
                 <label for="password">Password</label>
-                <input type="text" id="password" name="password"/>
+                <input type="password" id="password" name="password"/>
             </p>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <button type="submit" class="btn">Log in</button>
