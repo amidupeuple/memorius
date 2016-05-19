@@ -9,3 +9,10 @@ body {
     bottom:30px;
     width:100%;
 }
+
+#mainBodyHeader {
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+}
