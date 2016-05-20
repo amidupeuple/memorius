@@ -1,0 +1,34 @@
+/*
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #FCFFFF;
+    text-align: center;
+}
+
+#footerString {
+    position: absolute;
+    bottom:30px;
+    width:100%;
+}
+
+#mainBodyHeader {
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+}*/
+
+#navigation_wrapper a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+#navigation_wrapper a:hover {
+    color: #cc3333;
+}
+
+#login_body {
+    text-align: center;
+}
