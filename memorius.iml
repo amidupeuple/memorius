@@ -75,5 +75,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-ldap:4.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.ldap:spring-ldap-core:2.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.h2database:h2:1.4.191" level="project" />
   </component>
 </module>

@@ -1,5 +1,7 @@
 package com.memorius.config;
 
+import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -16,5 +18,13 @@ public class MemoriusWebAppInitializer extends AbstractAnnotationConfigDispatche
 
     protected String[] getServletMappings() {
         return new String[] {"/"};
+    }
+
+    //This is required in order to use profiles in configuration
+    @Override
+    protected WebApplicationContext createRootApplicationContext() {
+        WebApplicationContext context = (WebApplicationContext) super.createRootApplicationContext();
+        ((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev");
+        return context;
     }
 }

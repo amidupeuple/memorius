@@ -1,9 +1,13 @@
 package com.memorius.web;
 
+import com.memorius.model.Goal;
+import com.memorius.service.GoalService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +21,13 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/")
 public class MemoriusMainController {
+
+    private GoalService goalService;
+
+    @Autowired
+    public MemoriusMainController(GoalService goalService) {
+        this.goalService = goalService;
+    }
 
     @RequestMapping(value = "home", method = RequestMethod.GET)
     public String showHome() {
@@ -53,5 +64,13 @@ public class MemoriusMainController {
     @RequestMapping(value = "addGoal", method = RequestMethod.GET)
     public String showAddGoal() {
         return "addGoal";
+    }
+
+
+    @RequestMapping(value = "showGoals", method = RequestMethod.GET)
+    public String showGoals(Model model) {
+        Goal firstGoal = goalService.findGoalById(0);
+        model.addAttribute("goal", firstGoal);
+        return "showGoals";
     }
 }
