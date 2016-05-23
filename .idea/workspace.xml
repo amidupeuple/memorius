@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4d6cc4-ffef-42a7-939e-c6abccfb43ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_191.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/model/Goal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/repository/GoalRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/repository/jdbc/JdbcGoalRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/memorius_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/memorius_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memorius.iml" afterPath="$PROJECT_DIR$/memorius.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusMainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusMainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/home.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/home.jsp" />
     </list>
     <ignored path="memorius.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1099,7 +1080,7 @@
       <option name="presentableId" value="Default" />
       <updated>1463575979774</updated>
       <workItem from="1463575982789" duration="44167000" />
-      <workItem from="1463995599272" duration="8219000" />
+      <workItem from="1463995599272" duration="8271000" />
     </task>
     <task id="LOCAL-00001" summary="Now there is login-logout">
       <created>1463665408661</created>
@@ -1122,11 +1103,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463677239976</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first persistence profile added - dev - for H2">
+      <created>1464018737418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1464018737418</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52386000" />
+    <option name="totallyTimeSpent" value="52438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -1210,7 +1198,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Now there is login-logout" />
     <MESSAGE value="3 pages are done: login, home, addGoal" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 pages are done: login, home, addGoal" />
+    <MESSAGE value="first persistence profile added - dev - for H2" />
+    <option name="LAST_COMMIT_MESSAGE" value="first persistence profile added - dev - for H2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
