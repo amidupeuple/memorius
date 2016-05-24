@@ -8,12 +8,14 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * Created by dpivovar on 18.05.2016.
@@ -21,6 +23,8 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/")
 public class MemoriusMainController {
+
+    private static int idInc = 0;
 
     private GoalService goalService;
 
@@ -62,15 +66,24 @@ public class MemoriusMainController {
 
 
     @RequestMapping(value = "addGoal", method = RequestMethod.GET)
-    public String showAddGoal() {
+    public String showAddGoal(Model model) {
+        model.addAttribute("newGoal", new Goal());
         return "addGoal";
+    }
+
+    @RequestMapping(value = "addGoal", method = RequestMethod.POST)
+    public String goalSubmit(@ModelAttribute Goal newGoal, Model model ) {
+        newGoal.setId(++idInc);
+        goalService.saveGoal(newGoal);
+        model.addAttribute("goal", newGoal);
+        return "result";
     }
 
 
     @RequestMapping(value = "showGoals", method = RequestMethod.GET)
     public String showGoals(Model model) {
-        Goal firstGoal = goalService.findGoalById(0);
-        model.addAttribute("goal", firstGoal);
+        List<Goal> goals = goalService.findAllGoals();
+        model.addAttribute("goals", goals);
         return "showGoals";
     }
 }

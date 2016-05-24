@@ -2,7 +2,10 @@
 
 <%@ page session="true" %>
 <%@ taglib prefix="custom" tagdir="/WEB-INF/tags" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="format" uri="http://www.springframework.org/tags/form" %>
 <html lang="en">
 
     <jsp:include page="/WEB-INF/jsp/fragments/htmlHeader.jsp"/>
@@ -17,24 +20,26 @@
 
                 <br/>
 
-                <form role="form">
+                <form:form role="form" action="/addGoal" modelAttribute="newGoal">
                     <div class="form-group">
-                        <label for="nameOfGoal">Name:</label>
-                        <input type="text" class="form-control" id="nameOfGoal">
+                        <label for="nameOfGoal">Name:</label><br/>
+                        <form:input path="name" cssclass="form-control" id="nameOfGoal"/>
                     </div>
                     <div class="form-group">
                         <label for="goalDescription">Description:</label>
-                        <textarea class="form-control" id="goalDescription"></textarea>
+                        <form:textarea path="description" cssClass="form-control" id="goalDescription"/>
                     </div>
                     <div class="form-group">
-                        <label for="finishDate">Finish:</label>
-                        <input type="date" class="form-control" id="finishDate">
+                        <label for="datepicker">Finish:</label><br/>
+                        <form:input id="datepicker" path="deadline" maxlength="50"/>
                     </div>
                     <br/>
                     <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+                </form:form>
 
             </div>
         </div>
     </body>
+
+
 </html>

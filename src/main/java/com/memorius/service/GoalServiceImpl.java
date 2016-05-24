@@ -5,6 +5,8 @@ import com.memorius.repository.GoalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by dpivovar on 23.05.2016.
  */
@@ -20,5 +22,15 @@ public class GoalServiceImpl implements GoalService {
 
     public Goal findGoalById(int id) {
         return goalRepository.getGoal(id);
+    }
+
+    @Override
+    public void saveGoal(Goal goal) {
+        goalRepository.addGoal(goal);
+    }
+
+    @Override
+    public List<Goal> findAllGoals() {
+        return goalRepository.getAllGoals();
     }
 }

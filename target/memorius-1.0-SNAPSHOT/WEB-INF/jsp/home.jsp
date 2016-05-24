@@ -20,7 +20,7 @@
 
             <ul id="navigation_wrapper">
                 <li><a href="/addGoal">Add goal</a></li>
-                <li><a href="">Show goals</a></li>
+                <li><a href="/showGoals">Show goals</a></li>
                 <li><a href="javascript:formSubmit()">Logout</a></li>
             </ul>
 
