@@ -1,11 +1,17 @@
 package com.memorius.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
  * Created by dpivovar on 23.05.2016.
  */
+@Entity
+@Table(name = "goals")
 public class Goal {
+    @Id
     private int id;
     private String name;
     private String description;

@@ -22,14 +22,14 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/")
-public class MemoriusMainController {
+public class MemoriusController {
 
     private static int idInc = 0;
 
     private GoalService goalService;
 
     @Autowired
-    public MemoriusMainController(GoalService goalService) {
+    public MemoriusController(GoalService goalService) {
         this.goalService = goalService;
     }
 

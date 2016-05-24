@@ -3,6 +3,7 @@ package com.memorius.service;
 import com.memorius.model.Goal;
 import com.memorius.repository.GoalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,9 +14,18 @@ import java.util.List;
 @Service
 public class GoalServiceImpl implements GoalService {
 
+
     private GoalRepository goalRepository;
 
     @Autowired
+    @Qualifier("hibernateGoalRepository")
+    public void setGoalRepository(GoalRepository goalRepository) {
+        this.goalRepository = goalRepository;
+    }
+
+    public GoalServiceImpl() {
+    }
+
     public GoalServiceImpl(GoalRepository goalRepository) {
         this.goalRepository = goalRepository;
     }
