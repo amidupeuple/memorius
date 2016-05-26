@@ -18,7 +18,7 @@ public class GoalServiceImpl implements GoalService {
     private GoalRepository goalRepository;
 
     @Autowired
-    @Qualifier("hibernateGoalRepository")
+    @Qualifier("jpaGoalRepository")
     public void setGoalRepository(GoalRepository goalRepository) {
         this.goalRepository = goalRepository;
     }
