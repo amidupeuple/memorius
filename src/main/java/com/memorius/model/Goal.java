@@ -1,6 +1,7 @@
 package com.memorius.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
@@ -12,26 +13,30 @@ import java.util.Date;
 @Table(name = "goals")
 public class Goal {
     @Id
-    private int id;
+    @GeneratedValue
+    private Integer id;
     private String name;
     private String description;
     private Date deadline;
+    private String creator;
+    private String notificationFrequency;
 
-    public Goal(int id, String name, String description, Date deadline) {
-        this.id = id;
+    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency) {
         this.name = name;
         this.description = description;
         this.deadline = deadline;
+        this.creator = creator;
+        this.notificationFrequency = notificationFrequency;
     }
 
     public Goal() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -57,5 +62,21 @@ public class Goal {
 
     public void setDeadline(Date deadline) {
         this.deadline = deadline;
+    }
+
+    public String getCreator() {
+        return creator;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    public String getNotificationFrequency() {
+        return notificationFrequency;
+    }
+
+    public void setNotificationFrequency(String notificationsFrequency) {
+        this.notificationFrequency = notificationsFrequency;
     }
 }

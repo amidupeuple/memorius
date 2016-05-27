@@ -24,8 +24,6 @@ import java.util.List;
 @RequestMapping("/")
 public class MemoriusController {
 
-    private static int idInc = 0;
-
     private GoalService goalService;
 
     @Autowired
@@ -67,13 +65,17 @@ public class MemoriusController {
 
     @RequestMapping(value = "addGoal", method = RequestMethod.GET)
     public String showAddGoal(Model model) {
-        model.addAttribute("newGoal", new Goal());
+        Goal goal = new Goal();
+        goal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
+        model.addAttribute("newGoal", goal);
         return "addGoal";
     }
 
     @RequestMapping(value = "addGoal", method = RequestMethod.POST)
     public String goalSubmit(@ModelAttribute Goal newGoal, Model model ) {
-        newGoal.setId(++idInc);
+        //set username in controller, because I didn't find a way to set it in jsp
+        newGoal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
+
         goalService.saveGoal(newGoal);
         model.addAttribute("goal", newGoal);
         return "result";

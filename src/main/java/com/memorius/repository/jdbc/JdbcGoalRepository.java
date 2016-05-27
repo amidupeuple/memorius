@@ -34,10 +34,11 @@ public class JdbcGoalRepository implements GoalRepository {
                 GET_GOAL_BY_ID,
                 (rs, rowNum) -> {
                     return new Goal(
-                            rs.getInt("id"),
                             rs.getString("name"),
                             rs.getString("description"),
-                            rs.getDate("deadline")
+                            rs.getDate("deadline"),
+                            null,
+                            null
                     );
                 },
                 id);
@@ -58,10 +59,11 @@ public class JdbcGoalRepository implements GoalRepository {
         result = jdbcOperations.query(GET_ALL_GOALS,
                 (rs, rowNum) -> {
                     return new Goal(
-                            rs.getInt("id"),
                             rs.getString("name"),
                             rs.getString("description"),
-                            rs.getDate("deadline")
+                            rs.getDate("deadline"),
+                            null,
+                            null
                     );
                 });
         return result;

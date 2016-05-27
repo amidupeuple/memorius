@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by dpivovar on 24.05.2016.
  */
-@Repository
+//@Repository
 @Transactional
 public class HibernateGoalRepository implements GoalRepository {
 

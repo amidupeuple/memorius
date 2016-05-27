@@ -1,10 +1,13 @@
 package com.memorius.config;
 
+import org.apache.commons.dbcp.BasicDataSource;
 import org.h2.tools.Server;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.*;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
@@ -33,9 +36,10 @@ import java.util.Properties;
         @ComponentScan.Filter(type= FilterType.ANNOTATION, value = EnableWebMvc.class)
 })
 @EnableTransactionManagement
+@EnableJpaRepositories(basePackages = "com.memorius.repository")
 public class RootConfig {
 
-    @Bean(name = "h2WebServer", initMethod="start", destroyMethod="stop")
+    /*@Bean(name = "h2WebServer", initMethod="start", destroyMethod="stop")
     public org.h2.tools.Server h2WebServer() throws SQLException {
         return org.h2.tools.Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082");
     }
@@ -44,7 +48,7 @@ public class RootConfig {
     @DependsOn(value = "h2WebServer")
     public org.h2.tools.Server h2Server() throws SQLException {
         return org.h2.tools.Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "9092");
-    }
+    }*/
 
     @Bean
     PersistenceAnnotationBeanPostProcessor paPostProcessor() {
@@ -71,6 +75,16 @@ public class RootConfig {
         return adapter;
     }
 
+    @Bean
+    @Profile("dev_mysql")
+    public JpaVendorAdapter jpaVendorAdapterMySql() {
+        HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
+        adapter.setDatabase(Database.MYSQL);
+        adapter.setShowSql(true);
+        adapter.setGenerateDdl(false);
+        adapter.setDatabasePlatform("org.hibernate.dialect.MySQLDialect");
+        return adapter;
+    }
 
     //in order to add exception translation to a template-less Hibernate repository
     @Bean
@@ -99,6 +113,18 @@ public class RootConfig {
     }
 
     @Bean
+    @Profile("dev_mysql")
+    public DataSource dataSourceMySql() {
+        BasicDataSource dataSource = new BasicDataSource();
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/memorius?serverTimezone=UTC");
+        dataSource.setUsername("root");
+        dataSource.setPassword("root");
+        return dataSource;
+    }
+
+    @Bean
+    @Profile("dev")
     public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {
         LocalSessionFactoryBean sfb = new LocalSessionFactoryBean();
         sfb.setDataSource(dataSource);

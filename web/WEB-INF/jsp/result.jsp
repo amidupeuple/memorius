@@ -16,7 +16,9 @@
         ID: ${goal.id}<br/>
         Name: ${goal.name}<br/>
         Description: ${goal.description}<br/>
-        Deadline: ${goal.deadline}</p>
+        Deadline: ${goal.deadline}<br/>
+        Creator: ${goal.creator}<br/>
+        Freq: ${goal.notificationFrequency}</p>
 
     <br/>
     <a href="/home">Back to home</a></li>

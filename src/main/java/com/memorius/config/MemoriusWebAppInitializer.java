@@ -24,7 +24,7 @@ public class MemoriusWebAppInitializer extends AbstractAnnotationConfigDispatche
     @Override
     protected WebApplicationContext createRootApplicationContext() {
         WebApplicationContext context = (WebApplicationContext) super.createRootApplicationContext();
-        ((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev");
+        ((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev_mysql");
         return context;
     }
 }
