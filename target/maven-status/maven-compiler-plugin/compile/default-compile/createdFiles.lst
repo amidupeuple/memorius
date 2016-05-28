@@ -1,6 +1,5 @@
-com\memorius\config\SecurityConfig.class
-com\memorius\web\MemoriusMainController.class
-com\memorius\config\WebConfig.class
-com\memorius\config\SecurityWebInitializer.class
 com\memorius\config\RootConfig.class
+com\memorius\config\SecurityWebInitializer.class
 com\memorius\config\MemoriusWebAppInitializer.class
+com\memorius\config\WebConfig.class
+com\memorius\config\SecurityConfig.class
