@@ -7,4 +7,5 @@ CREATE TABLE goals (
   deadline DATE,
   creator VARCHAR (50),
   notificationFrequency VARCHAR (50),
+  status VARCHAR (10)
 );

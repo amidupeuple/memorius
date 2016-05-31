@@ -8,10 +8,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -67,6 +64,7 @@ public class MemoriusController {
     public String showAddGoal(Model model) {
         Goal goal = new Goal();
         goal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
+        goal.setStatus("open");
         model.addAttribute("newGoal", goal);
         return "addGoal";
     }
@@ -75,6 +73,7 @@ public class MemoriusController {
     public String goalSubmit(@ModelAttribute Goal newGoal, Model model ) {
         //set username in controller, because I didn't find a way to set it in jsp
         newGoal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
+        newGoal.setStatus("open");
 
         goalService.saveGoal(newGoal);
         model.addAttribute("goal", newGoal);
@@ -87,5 +86,12 @@ public class MemoriusController {
         List<Goal> goals = goalService.findAllGoals();
         model.addAttribute("goals", goals);
         return "showGoals";
+    }
+
+
+    @RequestMapping(value = "goal/{goalId}")
+    public String showGoal(@PathVariable String goalId, Model model) {
+        model.addAttribute("goalId", goalId);
+        return "goal";
     }
 }

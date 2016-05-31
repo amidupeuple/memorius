@@ -20,13 +20,15 @@ public class Goal {
     private Date deadline;
     private String creator;
     private String notificationFrequency;
+    private String status;
 
-    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency) {
+    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency, String status) {
         this.name = name;
         this.description = description;
         this.deadline = deadline;
         this.creator = creator;
         this.notificationFrequency = notificationFrequency;
+        this.status = status;
     }
 
     public Goal() {
@@ -78,5 +80,13 @@ public class Goal {
 
     public void setNotificationFrequency(String notificationsFrequency) {
         this.notificationFrequency = notificationsFrequency;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

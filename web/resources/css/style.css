@@ -39,3 +39,7 @@ body {
     overflow: hidden;
     max-width:1px;
 }
+
+.tablesorter tr {
+    cursor: pointer;
+}

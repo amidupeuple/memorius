@@ -44,7 +44,10 @@
                         <form:option value="Everyday"/>
                     </form:select>
                 </div>
-
+                <div class="form-group">
+                    <label for="status">Status:</label><br/>
+                    <form:input path="status" cssClass="form-control" id="status" disabled="true" />
+                </div>
                 <br/>
 
                 <button type="submit" class="btn btn-default">Submit</button>
