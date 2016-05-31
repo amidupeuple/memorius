@@ -2,38 +2,444 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4d6cc4-ffef-42a7-939e-c6abccfb43ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/repository/SpringDataJpaGoalRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.6.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_19.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/config/RootConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/icons/first.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/icons/last.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/icons/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/icons/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/icons/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/black-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/black-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/black-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/bootstrap-black-unsorted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/bootstrap-white-unsorted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/dragtable-handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/dropbox-asc-hovered.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/dropbox-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/dropbox-desc-hovered.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/dropbox-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/green-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/green-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/green-header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/green-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/ice-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/ice-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/ice-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/metro-black-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/metro-black-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/metro-loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/metro-unsorted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/metro-white-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/metro-white-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/white-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/white-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/white-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/psd/green-asc.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/psd/green-desc.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/psd/green-unsorted.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/psd/metro-style.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/black-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/black-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/black-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/bootstrap-black-unsorted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/bootstrap-white-unsorted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/dragtable-handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/dropbox-asc-hovered.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/dropbox-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/dropbox-desc-hovered.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/dropbox-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/first.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/green-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/green-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/green-header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/green-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/ice-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/ice-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/ice-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/last.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/metro-black-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/metro-black-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/metro-loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/metro-unsorted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/metro-white-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/metro-white-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/white-asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/white-desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/white-unsorted.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_glass_100_e4f1fb_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_glass_50_3baae3_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_glass_80_d7ebf9_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-icons_2694e8_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-icons_3d80b3_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-icons_72a7cf_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/select2-spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/select2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/external.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/grid-default-thumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/new-product-banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/sale-banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/screens-blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/img/screens.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/.jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/jquery.tablesorter.pager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/addons/pager/jquery.tablesorter.pager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/beta-testing/example-pager-custom-controls.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/beta-testing/example-widget-column-reorder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/beta-testing/pager-custom-controls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/beta-testing/widget-reorder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/dragtable.mod.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/filter.formatter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/high-specificity/theme.blue.specific.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/images/dragtable-handle.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/metro.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.black-ice.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.bootstrap_2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.dropbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.ice.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.jui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.metro-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/dragtable.mod.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/filter.formatter.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/images/dragtable-handle.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/jquery.tablesorter.pager.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/less/metro.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.blackice.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.blue.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.bootstrap_2.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.dark.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.default.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.dropbox.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.green.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.grey.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.ice.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.jui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/css/theme.metro-dark.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/extras/jquery.dragtable.mod.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/extras/jquery.metadata.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/extras/jquery.tablesorter.pager.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/extras/semver-mod.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/jquery.tablesorter.combined.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/jquery.tablesorter.combined.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/jquery.tablesorter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/jquery.tablesorter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/jquery.tablesorter.widgets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/jquery.tablesorter.widgets.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date-extract.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date-iso8601.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date-month.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date-range.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date-two-digit-year.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date-weekday.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-date.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-duration.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-feet-inch-fraction.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-file-type.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-globalize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-huge-numbers.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-ignore-articles.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-image.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-input-select.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-metric.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-named-numbers.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-network.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/parsers/parser-roman.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-alignChar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-build-table.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-columnSelector.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-columns.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-cssStickyHeaders.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-editable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-filter-formatter-html5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-filter-formatter-jui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-filter-formatter-select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-filter-type-insideRange.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-filter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-formatter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-grouping.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-headerTitles.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-lazyload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-math.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-output.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-pager.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-print.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-reflow.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-repeatheaders.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-resizable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-saveSort.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-scroller.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-sort2Hash.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-sortTbodies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-staticRow.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-stickyHeaders.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-storage.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-toggle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-uitheme.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/dist/js/widgets/widget-view.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/City0.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/City1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/City2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/City3.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/ajax-content.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/build.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/build.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/assets/theme_switcher.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/bootstrap-v2.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/jq.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/rangeslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/select2-3.4.6.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/css/tipsy.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-add-rows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-apply-widget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-child-rows-filtered.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-child-rows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-colspan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-css-highlighting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-dragtable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-empty-table.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-extending-defaults.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-extractors-parsers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-header-column-span.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-locale-sort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-meta-headers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-meta-parsers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-meta-sort-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-method-sortreset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-multiple-tbodies.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-custom-sort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-date-format.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-debug.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-delay-init.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-digits.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-render-header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-render-template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-selectorsort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-show-processing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sort-append.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sort-empty.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sort-force.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sort-key.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sort-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sort-order.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-sortreset-sortrestart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-text-extraction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-textsorter-semver.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-option-theme-metro-style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-options-headers-digits-strings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-options-headers-locked.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-options-headers-order.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-options-headers-parser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-options-headers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-pager-ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-pager-filtered.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-pager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-advanced.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-class-name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-date-range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-dates.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-duration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-feet-inch-fraction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-file-type.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-globalize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-ignore-articles.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-ip-address.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-jquery-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-metric.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-named-numbers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers-roman.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-parsers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-trigger-sort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-triggers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-update-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-update-cell.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-align-character.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-bootstrap-theme-v2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-bootstrap-theme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-build-table.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-column-selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-columns.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-css-sticky-header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-any-match.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-childrows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-custom-search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-custom-search2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-custom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-external-inputs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-formatter-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-formatter-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-formatter-select2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter-selectmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-formatter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-grouping-filter-childrows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-grouping.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-header-titles.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-lazyload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-math.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-output.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-pager-ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-pager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-print.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-reflow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-reflow1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-reflow2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-reflow3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-resizable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-savesort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-scroller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-sort-tbodies.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-sort-to-hash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-static-row.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-sticky-header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-toggle-tablesorter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-ui-theme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widget-zebra.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/example-widgets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/chili/jquery.chili-2.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/chili/recipes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/demo-build-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery-1.2.6.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery-1.4.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery-3.0.0-beta1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery-latest.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery-migrate-1.4.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery.jui_theme_switch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/jquery.tipsy.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/rangeslider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/search-ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/select2-3.4.6.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/js/sugar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/docs/themes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/example.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/extras/jquery.dragtable.mod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/extras/jquery.metadata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/extras/semver-mod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/extras/semver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/jquery.tablesorter.combined.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/jquery.tablesorter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/jquery.tablesorter.widgets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date-extract.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date-iso8601.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date-month.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date-range.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date-two-digit-year.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date-weekday.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-date.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-duration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-feet-inch-fraction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-file-type.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-globalize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-huge-numbers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-ignore-articles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-input-select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-metric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-named-numbers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-network.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/parsers/parser-roman.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-alignChar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-build-table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-columnSelector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-columns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-cssStickyHeaders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-editable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-filter-formatter-html5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-filter-formatter-jui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-filter-formatter-select2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-filter-type-insideRange.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-formatter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-grouping.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-headerTitles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-lazyload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-math.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-output.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-pager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-print.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-reflow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-repeatheaders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-resizable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-saveSort.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-scroller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-sort2Hash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-sortTbodies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-staticRow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-stickyHeaders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-storage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-toggle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-uitheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/widgets/widget-view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/tablesorter.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/testing/qunit-1.23.0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/testing/qunit-1.23.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/testing/testing-ipv6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/testing/testing-widgets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/testing/testing.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/vendors/tablesorter-master/testing/testing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/config/MemoriusWebAppInitializer.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/config/MemoriusWebAppInitializer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/RootConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/memorius_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/memorius_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/MemoriusWebAppInitializer.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/MemoriusWebAppInitializer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memorius.iml" afterPath="$PROJECT_DIR$/memorius.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/model/Goal.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/model/Goal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/repository/hibernate/HibernateGoalRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/repository/hibernate/HibernateGoalRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/repository/jdbc/JdbcGoalRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/repository/jdbc/JdbcGoalRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusController.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/addGoal.jsp" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/addGoal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/resources/css/style.css" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/addGoal.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/addGoal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/result.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/result.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/style.css" afterPath="$PROJECT_DIR$/web/resources/css/style.css" />
     </list>
     <ignored path="memorius.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,19 +476,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java">
+      <file leaf-file-name="showGoals.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="116" column="41" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="481">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemoriusWebAppInitializer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MemoriusWebAppInitializer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -92,14 +496,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateGoalRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/repository/hibernate/HibernateGoalRepository.java">
+      <file leaf-file-name="htmlHeader.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/fragments/htmlHeader.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="72" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,7 +541,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/home.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/fragments/htmlHeader.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/repository/GoalRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusMainController.java" />
@@ -152,14 +553,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/model/Goal.java" />
         <option value="$PROJECT_DIR$/web/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/result.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/addGoal.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/repository/hibernate/HibernateGoalRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/fragments/htmlHeader.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" />
       </list>
     </option>
   </component>
@@ -191,10 +593,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="width" value="960" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -221,26 +621,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB Consoles" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8d7fb96d-b419-4d31-ad3c-365d39fad3df" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,86 +650,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -368,14 +669,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,134 +695,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hibernate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -565,6 +730,25 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB Consoles" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8d7fb96d-b419-4d31-ad3c-365d39fad3df" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -579,17 +763,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\src\main\resources" />
-      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\WEB-INF\resources" />
-      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\WEB-INF" />
-      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\WEB-INF\jsp" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.memorius.web" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\resources\vendors" />
+      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\src\main\resources" />
+      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\WEB-INF\resources" />
+      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\WEB-INF" />
+      <recent name="C:\Users\dpivovar\IdeaProjects\memorius\web\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.memorius">
@@ -1117,7 +1302,8 @@
       <updated>1463575979774</updated>
       <workItem from="1463575982789" duration="44167000" />
       <workItem from="1463995599272" duration="21566000" />
-      <workItem from="1464103797815" duration="31749000" />
+      <workItem from="1464103797815" duration="31867000" />
+      <workItem from="1464599558223" duration="12777000" />
     </task>
     <task id="LOCAL-00001" summary="Now there is login-logout">
       <created>1463665408661</created>
@@ -1175,18 +1361,25 @@
       <option name="project" value="LOCAL" />
       <updated>1464276511752</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="MySQL profile added">
+      <created>1464364226770</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1464364226770</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97482000" />
+    <option name="totallyTimeSpent" value="110377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="960" height="1160" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35249043" sideWeight="0.521855" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35797665" sideWeight="0.52666664" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976654" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40444446" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1197,17 +1390,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39980546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.47867805" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27529183" sideWeight="0.47444445" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976654" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35249043" sideWeight="0.478145" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36284047" sideWeight="0.47333333" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976654" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38222224" sideWeight="0.5052161" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32392997" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47" sideWeight="0.4947839" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44666666" sideWeight="0.4947839" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1216,6 +1408,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32392997" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1237,7 +1430,8 @@
     <MESSAGE value="SpringTemplate for jdbc implemented" />
     <MESSAGE value="Hibernate persistence is added" />
     <MESSAGE value="Jpa persistence is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jpa persistence is added" />
+    <MESSAGE value="MySQL profile added" />
+    <option name="LAST_COMMIT_MESSAGE" value="MySQL profile added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1254,33 +1448,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/repository/hibernate/HibernateGoalRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/service/GoalService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1288,11 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1308,12 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1464342468152" expanded="true" signature="610:642" placeholder="select * fro... goal" />
-            <marker date="1464342468152" expanded="true" signature="692:729" placeholder="insert into goals... " />
-            <marker date="1464342468152" expanded="true" signature="781:800" placeholder="select * fro... goals" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,9 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,14 +1499,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="71" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="99" />
-          <folding>
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#506#507#0" expanded="false" />
-            <element signature="e#560#561#0" expanded="false" />
-            <element signature="e#615#616#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#703#704#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1485,7 +1636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1493,7 +1643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1501,7 +1650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1517,9 +1665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1527,13 +1672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="17" column="14" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1541,11 +1679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1553,7 +1686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1561,12 +1693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1464342468152" expanded="true" signature="610:642" placeholder="select * fro... goal" />
-            <marker date="1464342468152" expanded="true" signature="692:729" placeholder="insert into goals... " />
-            <marker date="1464342468152" expanded="true" signature="781:800" placeholder="select * fro... goals" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1574,9 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="154" selection-start-line="0" selection-start-column="154" selection-end-line="0" selection-end-column="154" />
-          <folding>
-            <marker date="1464342817616" expanded="true" signature="0:153" placeholder="INSERT INTO goals... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1585,17 +1708,17 @@
         <state relative-caret-position="221">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#857#858#0" expanded="false" />
+            <element signature="e#882#883#0" expanded="false" />
+            <element signature="e#919#920#0" expanded="false" />
+            <element signature="e#947#948#0" expanded="false" />
+            <element signature="e#1433#1434#0" expanded="false" />
+            <element signature="e#1463#1464#0" expanded="false" />
+            <element signature="e#1509#1510#0" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1639#1640#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1608,26 +1731,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/fragments/htmlHeader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1660,9 +1767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <marker date="1464342817622" expanded="true" signature="29:210" placeholder="CREATE TABLE... goals" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1690,31 +1794,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/repository/hibernate/HibernateGoalRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="530">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#727#728#0" expanded="false" />
+            <element signature="e#779#780#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#925#926#0" expanded="false" />
+            <element signature="e#991#992#0" expanded="false" />
+            <element signature="e#1043#1044#0" expanded="false" />
+            <element signature="e#1086#1087#0" expanded="false" />
+            <element signature="e#1139#1140#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/config/RootConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="116" column="41" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
+        <state relative-caret-position="274">
+          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/vendors/tablesorter-master/js/extras/semver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/vendors/tablesorter-master/css/theme.blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/fragments/htmlHeader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="72" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>

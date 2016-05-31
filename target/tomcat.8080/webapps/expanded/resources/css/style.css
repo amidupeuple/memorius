@@ -32,3 +32,10 @@ body {
 #login_body {
     text-align: center;
 }
+
+.goalsTableCell {
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    max-width:1px;
+}
