@@ -32,20 +32,16 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Description</th>
                     <th>Deadline</th>
-                    <th>Creator</th>
-                    <th>Notification Frequency</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <c:forEach var="goal" items="${goals}">
                     <tr onclick="window.location='goal/${goal.id}'">
                         <td class="goalsTableCell">${goal.name}</td>
-                        <td class="goalsTableCell">${goal.description}</td>
                         <td class="goalsTableCell"><fmt:formatDate value="${goal.deadline}" pattern="yyyy-MM-dd"/></td>
-                        <td class="goalsTableCell">${goal.creator}</td>
-                        <td class="goalsTableCell">${goal.notificationFrequency}</td>
+                        <td class="goalsTableCell">${goal.status}</td>
                     </tr>
                 </c:forEach>
             </tbody>

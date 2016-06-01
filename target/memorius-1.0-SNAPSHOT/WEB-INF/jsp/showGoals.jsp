@@ -13,7 +13,7 @@
 
     <link href="<c:url value="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.css"/> " rel="stylesheet"/>
     <link href="<c:url value="/resources/vendors/tablesorter-master/css/theme.blue.css"/>" rel="stylesheet" />
-
+    <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet" />
 </head>
 <body>
 <div class="container">
@@ -32,20 +32,16 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Description</th>
                     <th>Deadline</th>
-                    <th>Creator</th>
-                    <th>Notification Frequency</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <c:forEach var="goal" items="${goals}">
-                    <tr>
+                    <tr onclick="window.location='goal/${goal.id}'">
                         <td class="goalsTableCell">${goal.name}</td>
-                        <td class="goalsTableCell">${goal.description}</td>
                         <td class="goalsTableCell"><fmt:formatDate value="${goal.deadline}" pattern="yyyy-MM-dd"/></td>
-                        <td class="goalsTableCell">${goal.creator}</td>
-                        <td class="goalsTableCell">${goal.notificationFrequency}</td>
+                        <td class="goalsTableCell">${goal.status}</td>
                     </tr>
                 </c:forEach>
             </tbody>
@@ -59,6 +55,9 @@
     <a href="/home">Back to home</a></li>
 
 </div>
+
+
+
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>

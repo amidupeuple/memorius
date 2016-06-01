@@ -1,9 +1,13 @@
 package com.memorius.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 /**
@@ -15,7 +19,13 @@ public class Goal {
     @Id
     @GeneratedValue
     private Integer id;
+
+    @NotEmpty(message = "{name.empty}")
+    @Size(max=200, message = "{name.size}")
     private String name;
+
+    @NotEmpty(message = "{description.empty}")
+    @Size(max = 2000, message = "{description.size}")
     private String description;
     private Date deadline;
     private String creator;

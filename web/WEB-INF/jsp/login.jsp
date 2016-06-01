@@ -13,30 +13,29 @@
 
             <c:url value="/login" var="loginUrl"/>
 
-            <div class="container">
-                <form action="${loginUrl}" method="post">
-                    <c:if test="${not empty error}">
-                        <p>
-                                ${error}
-                        </p>
-                    </c:if>
-                    <c:if test="${not empty msg}">
-                        <p>
-                                ${msg}
-                        </p>
-                    </c:if>
+            <form action="${loginUrl}" method="post">
+                <c:if test="${not empty error}">
                     <p>
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username"/>
+                            ${error}
                     </p>
+                </c:if>
+                <c:if test="${not empty msg}">
                     <p>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password"/>
+                            ${msg}
                     </p>
-                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                    <button type="submit" class="btn">Log in</button>
-                </form>
-            </div>
+                </c:if>
+
+
+                <div class="form-group">
+                    <input type="text" class="form-control login_field" placeholder="username" name="username" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control login_field" placeholder="password" name="password" required >
+                </div>
+                <br/>
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                <button type="submit" class="btn btn-default">Log in</button>
+            </form>
         </div>
     </body>
 </html>

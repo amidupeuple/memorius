@@ -10,18 +10,10 @@
         <div class="container">
             <custom:bodyHeader/>
 
-            <br/>
-
-            <%--<div id="navigation_wrapper" class="row">
-                <div class="col-sm-4"><a href="">Add goal</a></div>
-                <div class="col-sm-4"><a href="">Show goals</a></div>
-                <div class="col-sm-4"><a href="">Logout</a></div>
-            </div>--%>
-
-            <ul id="navigation_wrapper">
-                <li><a href="/addGoal">Add goal</a></li>
-                <li><a href="/showGoals">Show goals</a></li>
-                <li><a href="javascript:formSubmit()">Logout</a></li>
+            <ul id="navigation_wrapper" class="list-group">
+                <li class="list-group-item"><a href="/addGoal">Add goal</a></li>
+                <li class="list-group-item"><a href="/showGoals">Show goals</a></li>
+                <li class="list-group-item"><a href="javascript:formSubmit()">Logout</a></li>
             </ul>
 
 
