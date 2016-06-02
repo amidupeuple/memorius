@@ -36,7 +36,16 @@ public class MemoriusController {
     }
 
     @RequestMapping(value = "home", method = RequestMethod.GET)
-    public String showHome() {
+    public String showHome(@RequestParam(value = "isGoalSaved", required = false) String isGoalSaved,
+                           @RequestParam(value = "goalName", required = false) String goalName,
+                           Model model) {
+        if (isGoalSaved != null) {
+            model.addAttribute("isGoalSaved", isGoalSaved);
+        }
+        if (goalName != null) {
+            model.addAttribute("goalName", goalName);
+        }
+
         return "home";
     }
 
@@ -87,8 +96,9 @@ public class MemoriusController {
         }
 
         goalService.saveGoal(newGoal);
-        model.addAttribute("goal", newGoal);
-        return "result";
+        model.addAttribute("goalName", newGoal.getName());
+        model.addAttribute("isGoalSaved", true);
+        return "redirect:/home";
     }
 
     @InitBinder
