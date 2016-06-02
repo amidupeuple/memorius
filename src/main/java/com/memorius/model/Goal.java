@@ -1,6 +1,7 @@
 package com.memorius.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,9 +28,15 @@ public class Goal {
     @NotEmpty(message = "{description.empty}")
     @Size(max = 2000, message = "{description.size}")
     private String description;
+
+    @NotNull(message = "{deadline.null}")
     private Date deadline;
+
     private String creator;
+
+    @NotEmpty(message = "{notificationFrequency.empty}")
     private String notificationFrequency;
+
     private String status;
 
     public Goal(String name, String description, Date deadline, String creator, String notificationFrequency, String status) {
