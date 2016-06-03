@@ -119,7 +119,8 @@ public class MemoriusController {
 
     @RequestMapping(value = "goal/{goalId}")
     public String showGoal(@PathVariable String goalId, Model model) {
-        model.addAttribute("goalId", goalId);
+        Goal goal = goalService.findGoalById(Integer.valueOf(goalId));
+        model.addAttribute("goal", goal);
         return "goal";
     }
 }
