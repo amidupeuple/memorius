@@ -11,6 +11,9 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
 /**
  * Created by dpivovar on 18.05.2016.
  */
@@ -38,4 +41,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/").setViewName("home");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
+
+
 }

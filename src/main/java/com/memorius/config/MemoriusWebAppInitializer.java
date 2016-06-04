@@ -2,7 +2,13 @@ package com.memorius.config;
 
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterRegistration;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 
 /**
  * Created by dpivovar on 18.05.2016.
@@ -27,4 +33,5 @@ public class MemoriusWebAppInitializer extends AbstractAnnotationConfigDispatche
         ((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev");
         return context;
     }
+
 }

@@ -100,7 +100,8 @@
                 <br/>
                 <br/>
                 <a class="btn btn-default" role="button" href="/home">Back to home</a>
-
+                <br/>
+                <br/>
 
             </form:form>
         </div>
