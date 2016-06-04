@@ -1,9 +1,14 @@
 package com.memorius.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 /**
@@ -15,18 +20,32 @@ public class Goal {
     @Id
     @GeneratedValue
     private Integer id;
+
+    @NotEmpty(message = "{name.empty}")
+    @Size(max=200, message = "{name.size}")
     private String name;
+
+    @NotEmpty(message = "{description.empty}")
+    @Size(max = 2000, message = "{description.size}")
     private String description;
+
+    @NotNull(message = "{deadline.null}")
     private Date deadline;
+
     private String creator;
+
+    @NotEmpty(message = "{notificationFrequency.empty}")
     private String notificationFrequency;
 
-    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency) {
+    private String status;
+
+    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency, String status) {
         this.name = name;
         this.description = description;
         this.deadline = deadline;
         this.creator = creator;
         this.notificationFrequency = notificationFrequency;
+        this.status = status;
     }
 
     public Goal() {
@@ -78,5 +97,13 @@ public class Goal {
 
     public void setNotificationFrequency(String notificationsFrequency) {
         this.notificationFrequency = notificationsFrequency;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

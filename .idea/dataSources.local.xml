@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="H2 - default@localhost" uuid="8d7fb96d-b419-4d31-ad3c-365d39fad3df">
-      <secret-storage>memory</secret-storage>
+      <secret-storage>master_key</secret-storage>
     </data-source>
   </component>
 </project>
