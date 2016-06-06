@@ -1,3 +1,7 @@
+#editButton {
+    vertical-align: text-bottom;
+}
+
 #navigation_wrapper a {
     color: black;
     font-size: 120%;

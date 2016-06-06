@@ -43,7 +43,7 @@
                 <c:if test="${isGoalSaved == 'true'}">
                     <div class="alert alert-success">
                         <a href="/home" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <strong>Success!</strong> Goal "${goalName}" was saved!
+                        <strong>Success!</strong><span style="color: black">${goalName}</span> was saved!
                     </div>
                 </c:if>
             </c:if>
