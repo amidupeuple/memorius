@@ -123,4 +123,13 @@ public class MemoriusController {
         model.addAttribute("goal", goal);
         return "goal";
     }
+
+
+    @RequestMapping(value = "editGoal/{goalId}", method = RequestMethod.GET)
+    public String showEditGoal(@PathVariable String goalId, Model model) {
+        Goal goal = goalService.findGoalById(Integer.valueOf(goalId));
+        model.addAttribute("goal", goal);
+        return "editGoal";
+    }
+
 }

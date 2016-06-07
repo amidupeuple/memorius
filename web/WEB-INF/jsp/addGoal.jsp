@@ -99,7 +99,9 @@
                 <button type="submit" class="btn btn-success">Submit</button><br/>
                 <br/>
                 <br/>
-                <a class="btn btn-default" role="button" href="/home">Back to home</a>
+                <a class="btn btn-default" role="button" href="/home">
+                    <span class="glyphicon glyphicon-chevron-left"></span>Back to home
+                </a>
                 <br/>
                 <br/>
                 <br/>
