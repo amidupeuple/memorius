@@ -19,7 +19,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by dpivovar on 18.05.2016.
@@ -29,6 +31,9 @@ import java.util.List;
 public class MemoriusController {
     private static final Logger LOG = Logger.getLogger(MemoriusController.class);
     private GoalService goalService;
+    private List<String> updatedFields;
+
+    private Goal currentGoal;
 
     @Autowired
     public MemoriusController(GoalService goalService) {
@@ -36,14 +41,12 @@ public class MemoriusController {
     }
 
     @RequestMapping(value = "home", method = RequestMethod.GET)
-    public String showHome(@RequestParam(value = "isGoalSaved", required = false) String isGoalSaved,
-                           @RequestParam(value = "goalName", required = false) String goalName,
-                           Model model) {
-        if (isGoalSaved != null) {
-            model.addAttribute("isGoalSaved", isGoalSaved);
-        }
-        if (goalName != null) {
-            model.addAttribute("goalName", goalName);
+    public String showHome(Model model) {
+
+        if (currentGoal != null) {
+            model.addAttribute("isGoalSaved", true);
+            model.addAttribute("goalName", currentGoal.getName());
+            currentGoal = null;
         }
 
         return "home";
@@ -96,8 +99,8 @@ public class MemoriusController {
         }
 
         goalService.saveGoal(newGoal);
-        model.addAttribute("goalName", newGoal.getName());
-        model.addAttribute("isGoalSaved", true);
+        currentGoal = newGoal;
+
         return "redirect:/home";
     }
 
@@ -121,6 +124,12 @@ public class MemoriusController {
     public String showGoal(@PathVariable String goalId, Model model) {
         Goal goal = goalService.findGoalById(Integer.valueOf(goalId));
         model.addAttribute("goal", goal);
+
+        if (updatedFields != null) {
+            model.addAttribute("updatedFields", updatedFields);
+            updatedFields = null;
+        }
+
         return "goal";
     }
 
@@ -130,6 +139,14 @@ public class MemoriusController {
         Goal goal = goalService.findGoalById(Integer.valueOf(goalId));
         model.addAttribute("goal", goal);
         return "editGoal";
+    }
+
+    @RequestMapping(value = "editGoal/{goalId}", method = RequestMethod.POST)
+    public ModelAndView editGoal(@ModelAttribute("goal") @Valid Goal goal, BindingResult bindingResult, @PathVariable String goalId) {
+
+        goal.setId(Integer.valueOf(goalId));
+        updatedFields = goalService.updateGoal(goal);
+        return new ModelAndView("redirect:/goal/"  + goalId);
     }
 
 }

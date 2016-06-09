@@ -40,7 +40,7 @@
 
     <br/>
 
-    <form:form action="/editGoal" commandName="goal" method="post">
+    <form:form action="/editGoal/${goal.id}" commandName="goal" method="post">
         <div class="row">
             <div class="col-lg-8">
                 <form:errors path="*" cssClass="errorblock" element="div"/>
@@ -51,7 +51,7 @@
         <div class="row">
             <div class="form-group col-lg-6">
                 <label for="nameOfGoal">Name:</label><br/>
-                <form:input path="name" cssClass="form-control" id="nameOfGoal"/>
+                <form:input path="name" cssClass="form-control" id="nameOfGoal" disabled="true"/>
             </div>
         </div>
 
@@ -104,27 +104,44 @@
                         notificationsSelect.selectedIndex = index;
                     }
                 </script>
-
-                <%--<script>
-                    $(document).ready(function() {
-
-                        var notificationVal = "${goal.notificationFrequency}";
-                        if (notificationVal == "") {
-
-                        } else if (notificationVal == "Day before") {
-                            notificationsSelect.selectedIndex = 1;
-                        } else if (notificationVal == "Everyday") {
-                            notificationsSelect.selectedIndex = 2;
-                        }
-                    });
-                </script>--%>
             </div>
         </div>
 
-        <div class="row">
+        <%--<div class="row">
             <div class="form-group col-lg-4">
                 <label for="status">Status:</label><br/>
                 <form:input path="status" cssClass="form-control" id="status" disabled="true" />
+            </div>
+        </div>--%>
+
+        <div class="row">
+            <div class="form-group col-lg-4">
+                <label for="statusSelector">Status:</label><br/>
+                <form:select path="status" id="statusSelector" cssClass="form-control" >
+                    <form:option value="Open"/>
+                    <form:option value="Postponed"/>
+                    <form:option value="Closed"/>
+                </form:select>
+
+                <c:set var="statusVal" value="goal.status"/>
+                <c:choose>
+                    <c:when test="${notificationVal eq 'Open'}">
+                        <script>setSelectedStatus(0)</script>
+                    </c:when>
+                    <c:when test="${notificationVal eq 'Postponed'}">
+                        <script>setSelectedStatus(1)</script>
+                    </c:when>
+                    <c:when test="${notificationVal eq 'Closed'}">
+                        <script>setSelectedStatus(2)</script>
+                    </c:when>
+                </c:choose>
+
+                <script>
+                    function setSelectedStatus(index) {
+                        var notificationsSelect = document.getElementById('statusSelector');
+                        notificationsSelect.selectedIndex = index;
+                    }
+                </script>
             </div>
         </div>
 

@@ -1,12 +1,11 @@
 package com.memorius.service;
 
 import com.memorius.model.Goal;
-import com.memorius.repository.GoalRepository;
 import com.memorius.repository.SpringDataJpaGoalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -53,5 +52,34 @@ public class GoalServiceImpl implements GoalService {
     public List<Goal> findAllGoals() {
         //return goalRepository.getAllGoals();
         return goalRepository.findAll();
+    }
+
+    @Override
+    public List<String> updateGoal(Goal goal) {
+        Goal prevGoal = goalRepository.findOne(goal.getId());
+        List<String> updatedProperties = new ArrayList<>();
+        if (goal.getDeadline().compareTo(prevGoal.getDeadline()) != 0) {
+            prevGoal.setDeadline(goal.getDeadline());
+            updatedProperties.add("Deadline");
+        }
+
+        if (!goal.getDescription().equals(prevGoal.getDescription())) {
+            prevGoal.setDescription(goal.getDescription());
+            updatedProperties.add("Description");
+        }
+
+        if (!goal.getNotificationFrequency().equals(prevGoal.getNotificationFrequency())) {
+            prevGoal.setNotificationFrequency(goal.getNotificationFrequency());
+            updatedProperties.add("Notification Frequency");
+        }
+
+        if (!goal.getStatus().equals(prevGoal.getStatus())) {
+            prevGoal.setStatus(goal.getStatus());
+            updatedProperties.add("Status");
+        }
+
+        goalRepository.save(prevGoal);
+
+        return updatedProperties;
     }
 }

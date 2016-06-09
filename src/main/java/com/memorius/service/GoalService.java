@@ -11,4 +11,5 @@ public interface GoalService {
     Goal findGoalById(int id);
     void saveGoal(Goal goal);
     List<Goal> findAllGoals();
+    List<String> updateGoal(Goal goal);
 }

@@ -16,6 +16,7 @@
     <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -60,6 +61,15 @@
     <br/>
     <br/>
     <br/>
+
+    <c:if test="${not empty updatedFields}">
+        <c:if test="${updatedFields.size() > 0}">
+            <div class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>${goal.name}</strong> was updated!
+            </div>
+        </c:if>
+    </c:if>
 
     <script>
         $('#disableGoalDescription').click(function() {
