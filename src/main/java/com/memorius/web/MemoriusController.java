@@ -1,6 +1,7 @@
 package com.memorius.web;
 
 import com.memorius.model.Goal;
+import com.memorius.service.EmailService;
 import com.memorius.service.GoalService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +32,11 @@ import java.util.Map;
 public class MemoriusController {
     private static final Logger LOG = Logger.getLogger(MemoriusController.class);
     private GoalService goalService;
-    private List<String> updatedFields;
 
+    @Autowired
+    private EmailService emailService;
+
+    private List<String> updatedFields;
     private Goal currentGoal;
 
     @Autowired
@@ -149,4 +153,13 @@ public class MemoriusController {
         return new ModelAndView("redirect:/goal/"  + goalId);
     }
 
+
+    @RequestMapping(value = "test", method = RequestMethod.GET)
+    public String showTest() {
+        emailService.sendEmail("danyapivovarov@gmail.com",
+                "memorius.notifier@gmail.com",
+                "First automatic email",
+                "Hello man!");
+        return "test";
+    }
 }

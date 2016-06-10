@@ -13,6 +13,8 @@
         <link href="<c:url value="/resources/bootstrap/css/bootstrap.min.css"/> " rel="stylesheet"/>
         <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet" />
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -22,6 +24,7 @@
             <ul id="navigation_wrapper" class="nav nav-pills nav-stacked">
                 <li role="presentation"><a href="/addGoal">Add goal</a></li>
                 <li role="presentation"><a href="/showGoals">Show goals</a></li>
+                <li role="presentation"><a href="/test">Test</a></li>
                 <li role="presentation"><a href="javascript:formSubmit()">Logout</a></li>
             </ul>
 
@@ -42,8 +45,8 @@
             <c:if test="${not empty isGoalSaved}">
                 <c:if test="${isGoalSaved == 'true'}">
                     <div class="alert alert-success">
-                        <a href="/home" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <strong>Success!</strong><span style="color: black">${goalName}</span> was saved!
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>${goalName}</strong> was saved!
                     </div>
                 </c:if>
             </c:if>

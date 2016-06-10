@@ -24,6 +24,7 @@
             <ul id="navigation_wrapper" class="nav nav-pills nav-stacked">
                 <li role="presentation"><a href="/addGoal">Add goal</a></li>
                 <li role="presentation"><a href="/showGoals">Show goals</a></li>
+                <li role="presentation"><a href="/test">Test</a></li>
                 <li role="presentation"><a href="javascript:formSubmit()">Logout</a></li>
             </ul>
 
