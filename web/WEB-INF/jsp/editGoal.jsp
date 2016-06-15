@@ -40,14 +40,18 @@
 
     <br/>
 
-    <form:form action="/editGoal/${goal.id}" commandName="goal" method="post">
+    <form:form action="/editGoal?goalId=${goal.id}" commandName="goal" method="post">
         <div class="row">
             <div class="col-lg-8">
                 <form:errors path="*" cssClass="errorblock" element="div"/>
             </div>
         </div>
 
+        <form:input path="id" type="hidden"/>
+        <form:input path="name" type="hidden"/>
+        <form:input path="creator" type="hidden"/>
 
+        <!-- how to send value in controller via form submitting of disabled field -->
         <div class="row">
             <div class="form-group col-lg-6">
                 <label for="nameOfGoal">Name:</label><br/>

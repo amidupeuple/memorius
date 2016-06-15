@@ -138,19 +138,25 @@ public class MemoriusController {
     }
 
 
-    @RequestMapping(value = "editGoal/{goalId}", method = RequestMethod.GET)
-    public String showEditGoal(@PathVariable String goalId, Model model) {
+    @RequestMapping(value = "editGoal", method = RequestMethod.GET)
+    public String showEditGoal(@RequestParam String goalId, Model model) {
         Goal goal = goalService.findGoalById(Integer.valueOf(goalId));
         model.addAttribute("goal", goal);
         return "editGoal";
     }
 
-    @RequestMapping(value = "editGoal/{goalId}", method = RequestMethod.POST)
-    public ModelAndView editGoal(@ModelAttribute("goal") @Valid Goal goal, BindingResult bindingResult, @PathVariable String goalId) {
+    @RequestMapping(value = "editGoal", method = RequestMethod.POST)
+    public String editGoal(@RequestParam String goalId,
+                           @ModelAttribute("goal") @Valid Goal goal,
+                           BindingResult bindingResult,
+                           Model model) {
 
-        goal.setId(Integer.valueOf(goalId));
+        if (bindingResult.hasErrors()) {
+            return "editGoal";
+        }
+
         updatedFields = goalService.updateGoal(goal);
-        return new ModelAndView("redirect:/goal/"  + goalId);
+        return "redirect:/goal/"  + goalId;
     }
 
 
@@ -159,7 +165,7 @@ public class MemoriusController {
         emailService.sendEmail("danyapivovarov@gmail.com",
                 "memorius.notifier@gmail.com",
                 "First automatic email",
-                "Hello man!");
+                "Hello Kitty! I'm Mr. Memorius Notifier. Soon I'll start to send you notes about your goals. Hope you'll enjoy it;)");
         return "test";
     }
 }

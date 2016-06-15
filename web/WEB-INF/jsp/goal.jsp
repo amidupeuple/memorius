@@ -24,7 +24,7 @@
     <custom:bodyHeader/>
 
     <b><span style="color: #5bb75b; font-size: 30px; margin-right: 20px">${goal.name}   </span></b>
-    <a id="editButton" class="btn btn-default" role="button" href="/editGoal/${goal.id}">
+    <a id="editButton" class="btn btn-default" role="button" href="/editGoal?goalId=${goal.id}">
         <span class="glyphicon glyphicon-pencil"/>
     </a>
 
