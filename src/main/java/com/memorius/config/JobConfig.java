@@ -4,6 +4,7 @@ import com.memorius.job.EveryHourNotifierJob;
 import com.memorius.job.NotifierJob;
 import com.memorius.service.EmailService;
 import com.memorius.service.GoalService;
+import com.memorius.service.UserService;
 import org.apache.commons.collections.map.HashedMap;
 import org.apache.log4j.Logger;
 import org.quartz.JobDetail;
@@ -44,7 +45,7 @@ public class JobConfig {
 
     @Bean
     @Autowired
-    public JobDetailFactoryBean everydayNotifier(GoalService goalService, EmailService emailService) {
+    public JobDetailFactoryBean everydayNotifier(GoalService goalService, EmailService emailService, UserService userService) {
         JobDetailFactoryBean everydayNotifierJob = new JobDetailFactoryBean();
         everydayNotifierJob.setJobClass(NotifierJob.class);
         everydayNotifierJob.setDurability(true);
@@ -52,6 +53,7 @@ public class JobConfig {
         jobData.put("frequency", "Everyday");
         jobData.put("goalService", goalService);
         jobData.put("emailService", emailService);
+        jobData.put("userService", userService);
         everydayNotifierJob.setJobDataAsMap(jobData);
 
         return everydayNotifierJob;
@@ -76,7 +78,7 @@ public class JobConfig {
         SimpleTriggerFactoryBean trigger = new SimpleTriggerFactoryBean();
         trigger.setJobDetail(everydayNotifier);
         trigger.setStartDelay(5000);
-        trigger.setRepeatInterval(60000);
+        trigger.setRepeatInterval(86400000);
 
         return trigger;
     }

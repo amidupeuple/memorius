@@ -67,12 +67,16 @@
     <br/>
 
     <c:if test="${not empty updatedFields}">
-        <c:if test="${updatedFields.size() > 0}">
-            <div class="alert alert-success">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>${goal.name}</strong> was updated!
-            </div>
-        </c:if>
+        <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>${goal.name}</strong> was updated!
+        </div>
+    </c:if>
+    <c:if test="${updatedFields.size() eq 0}">
+        <div class="alert alert-warning">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>${goal.name}</strong> was NOT updated! No new data.
+        </div>
     </c:if>
 
     <script>

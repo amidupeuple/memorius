@@ -24,7 +24,7 @@
     <custom:bodyHeader/>
 
     <b><span style="color: #5bb75b; font-size: 30px; margin-right: 20px">${goal.name}   </span></b>
-    <a id="editButton" class="btn btn-default" role="button" href="/editGoal/${goal.id}">
+    <a id="editButton" class="btn btn-default" role="button" href="/editGoal?goalId=${goal.id}">
         <span class="glyphicon glyphicon-pencil"/>
     </a>
 
@@ -35,6 +35,10 @@
         <div class="form-group">
             <label for="creator">Creator:</label>
             <span id="creator">${goal.creator}</span>
+        </div>
+        <div class="form-group">
+            <label for="participants">Participants:</label>
+            <span id="participants">${goal.participants}</span>
         </div>
         <div class="form-group">
             <label for="deadline">Deadline:</label>
@@ -63,12 +67,16 @@
     <br/>
 
     <c:if test="${not empty updatedFields}">
-        <c:if test="${updatedFields.size() > 0}">
-            <div class="alert alert-success">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>${goal.name}</strong> was updated!
-            </div>
-        </c:if>
+        <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>${goal.name}</strong> was updated!
+        </div>
+    </c:if>
+    <c:if test="${updatedFields.size() eq 0}">
+        <div class="alert alert-warning">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>${goal.name}</strong> was NOT updated! No new data.
+        </div>
     </c:if>
 
     <script>

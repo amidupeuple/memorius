@@ -16,17 +16,12 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-/**
- * Created by dpivovar on 18.05.2016.
- */
+
 @Controller
 @RequestMapping("/")
 public class MemoriusController {
@@ -60,8 +55,7 @@ public class MemoriusController {
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public ModelAndView login(
             @RequestParam(value = "error", required = false) String error,
-            @RequestParam(value = "logout", required = false) String logout,
-            HttpServletRequest request) {
+            @RequestParam(value = "logout", required = false) String logout) {
         ModelAndView modelAndView = new ModelAndView();
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -94,7 +88,7 @@ public class MemoriusController {
     }
 
     @RequestMapping(value = "addGoal", method = RequestMethod.POST)
-    public String goalSubmit(@ModelAttribute("newGoal") @Valid Goal newGoal, BindingResult bindingResult, Model model) {
+    public String goalSubmit(@ModelAttribute("newGoal") @Valid Goal newGoal, BindingResult bindingResult) {
         //set username in controller, because I didn't find a way to set it in jsp
         newGoal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
         newGoal.setStatus("open");

@@ -2,6 +2,7 @@ package com.memorius.service;
 
 import com.memorius.model.Goal;
 import com.memorius.repository.SpringDataJpaGoalRepository;
+import org.apache.commons.lang.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -58,7 +59,7 @@ public class GoalServiceImpl implements GoalService {
     public List<String> updateGoal(Goal goal) {
         Goal prevGoal = goalRepository.findOne(goal.getId());
         List<String> updatedProperties = new ArrayList<>();
-        if (goal.getDeadline().compareTo(prevGoal.getDeadline()) != 0) {
+        if (!DateUtils.isSameDay(goal.getDeadline(), prevGoal.getDeadline())) {
             prevGoal.setDeadline(goal.getDeadline());
             updatedProperties.add("Deadline");
         }
@@ -80,12 +81,14 @@ public class GoalServiceImpl implements GoalService {
 
         if (((goal.getParticipants() == null) && (prevGoal.getParticipants() != null)) ||
                 ((goal.getParticipants() != null) && (prevGoal.getParticipants() == null)) ||
-                (!goal.getParticipants().equals(prevGoal.getParticipants()))) {
+                ((goal.getParticipants() != null) && (prevGoal.getParticipants() != null) && (!goal.getParticipants().equals(prevGoal.getParticipants())))) {
             prevGoal.setParticipants(goal.getParticipants());
             updatedProperties.add("Participants");
         }
 
-        goalRepository.save(prevGoal);
+        if (updatedProperties.size() != 0) {
+            goalRepository.save(prevGoal);
+        }
 
         return updatedProperties;
     }

@@ -7,5 +7,14 @@ CREATE TABLE goals (
   deadline DATE,
   creator VARCHAR (50),
   notificationFrequency VARCHAR (50),
-  status VARCHAR (10)
+  status VARCHAR (10),
+  participants VARCHAR (45)
+);
+
+DROP TABLE users IF EXISTS;
+
+CREATE TABLE users (
+  id INTEGER auto_increment ,
+  userName VARCHAR (45),
+  email VARCHAR(100),
 );

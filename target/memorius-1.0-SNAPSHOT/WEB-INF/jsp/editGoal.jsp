@@ -6,6 +6,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <html >
 
 <head>
@@ -40,14 +41,18 @@
 
     <br/>
 
-    <form:form action="/editGoal/${goal.id}" commandName="goal" method="post">
+    <form:form action="/editGoal?goalId=${goal.id}" commandName="goal" method="post">
         <div class="row">
             <div class="col-lg-8">
                 <form:errors path="*" cssClass="errorblock" element="div"/>
             </div>
         </div>
 
+        <form:input path="id" type="hidden"/>
+        <form:input path="name" type="hidden"/>
+        <form:input path="creator" type="hidden"/>
 
+        <!-- how to send value in controller via form submitting of disabled field -->
         <div class="row">
             <div class="form-group col-lg-6">
                 <label for="nameOfGoal">Name:</label><br/>
@@ -144,6 +149,34 @@
                 </script>
             </div>
         </div>
+
+        <div class="row">
+            <div class="form-group col-lg-4">
+                <label>Participants:</label><br/>
+                <label class="checkbox-inline"><form:checkbox id="kityCheckbox" path="participants" value="Kity"/>Kity</label>
+                <label class="checkbox-inline"><form:checkbox id="danyaCheckbox" path="participants" value="Danya"/>Danya</label>
+            </div>
+
+            <c:set var="participantsVal" value="${goal.participants}"/>
+            <c:set var="arrOfParticipants" value="${fn:split(participantsVal, ',')}"/>
+            <c:forEach items="${arrOfParticipants}" var="p">
+                <c:choose>
+                    <c:when test="${fn:contains(p, 'Kity')}">
+                        <script>
+                            var kityCheckbox = document.getElementById('kityCheckbox');
+                            kityCheckbox.checked = true;
+                        </script>
+                    </c:when>
+                    <c:when test="${fn:contains(p, 'Danya')}">
+                        <script>
+                            var danyaCheckbox = document.getElementById('danyaCheckbox');
+                            danyaCheckbox.checked = true;
+                        </script>
+                    </c:when>
+                </c:choose>
+            </c:forEach>
+        </div>
+        <br/>
 
         <button type="submit" class="btn btn-success">Submit</button><br/>
         <br/>
