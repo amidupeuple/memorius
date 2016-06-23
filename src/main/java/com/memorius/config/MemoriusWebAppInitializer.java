@@ -15,7 +15,7 @@ import javax.servlet.ServletException;
  */
 public class MemoriusWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] {RootConfig.class};
+        return new Class<?>[] {RootConfig.class, JobConfig.class};
     }
 
     protected Class<?>[] getServletConfigClasses() {
@@ -30,7 +30,8 @@ public class MemoriusWebAppInitializer extends AbstractAnnotationConfigDispatche
     @Override
     protected WebApplicationContext createRootApplicationContext() {
         WebApplicationContext context = (WebApplicationContext) super.createRootApplicationContext();
-        ((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev");
+        //((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev");
+        ((ConfigurableEnvironment) context.getEnvironment()).setActiveProfiles("dev_mysql");
         return context;
     }
 

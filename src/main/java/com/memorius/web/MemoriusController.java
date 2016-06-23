@@ -89,6 +89,7 @@ public class MemoriusController {
         goal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
         goal.setStatus("open");
         model.addAttribute("newGoal", goal);
+        LOG.debug("add goal");
         return "addGoal";
     }
 
@@ -156,6 +157,7 @@ public class MemoriusController {
         }
 
         updatedFields = goalService.updateGoal(goal);
+        model.addAttribute("goal", goal);
         return "redirect:/goal/"  + goalId;
     }
 

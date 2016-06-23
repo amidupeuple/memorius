@@ -39,7 +39,7 @@ public class JdbcGoalRepository implements GoalRepository {
                             rs.getDate("deadline"),
                             null,
                             null,
-                            null
+                            null, null
                     );
                 },
                 id);
@@ -63,6 +63,7 @@ public class JdbcGoalRepository implements GoalRepository {
                             rs.getString("name"),
                             rs.getString("description"),
                             rs.getDate("deadline"),
+                            null,
                             null,
                             null,
                             null

@@ -37,6 +37,10 @@
             <span id="creator">${goal.creator}</span>
         </div>
         <div class="form-group">
+            <label for="participants">Participants:</label>
+            <span id="participants">${goal.participants}</span>
+        </div>
+        <div class="form-group">
             <label for="deadline">Deadline:</label>
             <span id="deadline"><fmt:formatDate value="${goal.deadline}" pattern="yyyy-MM-dd"/></span>
         </div>

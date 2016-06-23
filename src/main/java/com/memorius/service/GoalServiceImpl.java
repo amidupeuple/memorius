@@ -78,8 +78,20 @@ public class GoalServiceImpl implements GoalService {
             updatedProperties.add("Status");
         }
 
+        if (((goal.getParticipants() == null) && (prevGoal.getParticipants() != null)) ||
+                ((goal.getParticipants() != null) && (prevGoal.getParticipants() == null)) ||
+                (!goal.getParticipants().equals(prevGoal.getParticipants()))) {
+            prevGoal.setParticipants(goal.getParticipants());
+            updatedProperties.add("Participants");
+        }
+
         goalRepository.save(prevGoal);
 
         return updatedProperties;
+    }
+
+    @Override
+    public List<Goal> findGoalsByStatusAndNotificationFrequencyAllIgnoresCase(String status, String notificationFrequency) {
+        return goalRepository.readGoalsByStatusAndNotificationFrequency(status, notificationFrequency);
     }
 }

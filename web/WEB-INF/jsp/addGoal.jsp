@@ -96,6 +96,16 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="form-group col-lg-4">
+                        <label>Participants:</label><br/>
+                        <label class="checkbox-inline"><form:checkbox  path="participants" value="Kity"/>Kity</label>
+                        <label class="checkbox-inline"><form:checkbox path="participants" value="Danya"/>Danya</label>
+                    </div>
+                </div>
+                <br/>
+
+
                 <button type="submit" class="btn btn-success">Submit</button><br/>
                 <br/>
                 <br/>

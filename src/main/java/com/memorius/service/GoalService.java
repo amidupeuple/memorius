@@ -12,4 +12,5 @@ public interface GoalService {
     void saveGoal(Goal goal);
     List<Goal> findAllGoals();
     List<String> updateGoal(Goal goal);
+    List<Goal> findGoalsByStatusAndNotificationFrequencyAllIgnoresCase(String status, String notificationFrequency);
 }

@@ -39,13 +39,16 @@ public class Goal {
 
     private String status;
 
-    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency, String status) {
+    private String participants;
+
+    public Goal(String name, String description, Date deadline, String creator, String notificationFrequency, String status, String participants) {
         this.name = name;
         this.description = description;
         this.deadline = deadline;
         this.creator = creator;
         this.notificationFrequency = notificationFrequency;
         this.status = status;
+        this.participants = participants;
     }
 
     public Goal() {
@@ -105,5 +108,13 @@ public class Goal {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getParticipants() {
+        return participants;
+    }
+
+    public void setParticipants(String participants) {
+        this.participants = participants;
     }
 }
