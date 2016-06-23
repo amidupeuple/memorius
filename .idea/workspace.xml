@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4d6cc4-ffef-42a7-939e-c6abccfb43ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/model/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/repository/SpringDataJpaUserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/service/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.6.RELEASE.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/config/MailConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/config/MailConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/config/MemoriusWebAppInitializer.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/config/MemoriusWebAppInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/model/Goal.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/model/Goal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/repository/SpringDataJpaGoalRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/repository/SpringDataJpaGoalRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/repository/jdbc/JdbcGoalRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/repository/jdbc/JdbcGoalRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/service/GoalService.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/service/GoalService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/service/GoalServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/service/GoalServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/memorius/web/MemoriusController.class" afterPath="$PROJECT_DIR$/target/classes/com/memorius/web/MemoriusController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/MailConfig.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/MailConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/MemoriusWebAppInitializer.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/config/MemoriusWebAppInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/model/Goal.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/model/Goal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/repository/SpringDataJpaGoalRepository.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/repository/SpringDataJpaGoalRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/repository/jdbc/JdbcGoalRepository.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/repository/jdbc/JdbcGoalRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/service/GoalService.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/service/GoalService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/service/GoalServiceImpl.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/service/GoalServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/web/MemoriusController.class" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/com/memorius/web/MemoriusController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/memorius_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/memorius_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memorius.iml" afterPath="$PROJECT_DIR$/memorius.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/config/JobConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/config/JobConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/config/MemoriusWebAppInitializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/job/NotifierJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/job/NotifierJob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/service/GoalServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusController.java" afterPath="$PROJECT_DIR$/src/main/java/com/memorius/web/MemoriusController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/initDB.sql" afterPath="$PROJECT_DIR$/target/classes/db/initDB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/populateDB.sql" afterPath="$PROJECT_DIR$/target/classes/db/populateDB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/db/initDB.sql" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/db/initDB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/db/populateDB.sql" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/classes/db/populateDB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/addGoal.jsp" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/addGoal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/editGoal.jsp" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/editGoal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/goal.jsp" afterPath="$PROJECT_DIR$/target/memorius-1.0-SNAPSHOT/WEB-INF/jsp/goal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/goal.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/goal.jsp" />
     </list>
     <ignored path="memorius.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotifierJob.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NotifierJob.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/job/NotifierJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+            <state relative-caret-position="65">
+              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1126#1127#0" expanded="true" />
@@ -115,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showGoals.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret line="239" column="21" selection-start-line="239" selection-start-column="21" selection-end-line="239" selection-end-column="21" />
+            <state relative-caret-position="432">
+              <caret line="286" column="31" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -190,18 +150,6 @@
             <state relative-caret-position="-683">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringDataJpaUserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/repository/SpringDataJpaUserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1368,7 +1316,7 @@
       <workItem from="1465071272183" duration="4165000" />
       <workItem from="1465229498810" duration="3389000" />
       <workItem from="1465289326319" duration="32025000" />
-      <workItem from="1465913569362" duration="40664000" />
+      <workItem from="1465913569362" duration="41394000" />
     </task>
     <task id="LOCAL-00001" summary="Now there is login-logout">
       <created>1463665408661</created>
@@ -1472,7 +1420,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233896000" />
+    <option name="totallyTimeSpent" value="234626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
@@ -1550,7 +1498,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/memorius/job/NotifierJob.java</url>
-          <line>56</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
@@ -1659,14 +1607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1994,23 +1934,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="286" column="31" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/showGoals.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/memorius/job/NotifierJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+        <state relative-caret-position="65">
+          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1126#1127#0" expanded="true" />
             <element signature="e#1172#1173#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="239" column="21" selection-start-line="239" selection-start-column="21" selection-end-line="239" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>

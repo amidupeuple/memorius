@@ -41,6 +41,7 @@ public class NotifierJob extends QuartzJobBean {
         this.userService = userService;
     }
 
+
     @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         LOG.info("Notifier job : frequency=" + frequency + " fired!");
@@ -63,12 +64,12 @@ public class NotifierJob extends QuartzJobBean {
 
                 for (String p: participantArr) {
                     User u = userService.findUserByUserName(p);
-                    LOG.info("email: " + u.getEmail());
+                    /*LOG.info("email: " + u.getEmail());
                     emailService.sendEmail(u.getEmail(),
                             "memorius.notifier@gmail.com",
                             "Memorius. " + goal.getName(),
-                            "Deadline for " + goal.getName() + " is " + new SimpleDateFormat("dd-MM-yyyy").format(goal.getDeadline()) + "\n Please keep it in mind. \n\n\n \n" +
-                                    "Sincerely,\nMemorius");
+                            "Deadline for " + goal.getName() + " is " + new SimpleDateFormat("dd-MM-yyyy").format(goal.getDeadline()) + "\nPlease keep it in mind.\n\n\n \n" +
+                                    "Sincerely yours,\nMemorius");*/
                 }
             }
         }
