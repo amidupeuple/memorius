@@ -91,7 +91,7 @@ public class MemoriusController {
     public String goalSubmit(@ModelAttribute("newGoal") @Valid Goal newGoal, BindingResult bindingResult) {
         //set username in controller, because I didn't find a way to set it in jsp
         newGoal.setCreator(SecurityContextHolder.getContext().getAuthentication().getName());
-        newGoal.setStatus("open");
+        newGoal.setStatus("Open");
 
         if (bindingResult.hasErrors()) {
             return "addGoal";

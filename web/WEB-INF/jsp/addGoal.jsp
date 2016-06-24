@@ -82,9 +82,9 @@
                     <div class="form-group col-lg-4">
                         <label for="notificationFreqSel">Notification frequency:</label><br/>
                         <form:select path="notificationFrequency" id="notificationFreqSel" cssClass="form-control">
-                            <form:option value=""/>
-                            <form:option value="Day before"/>
                             <form:option value="Everyday"/>
+                            <form:option value="One in two days"/>
+                            <form:option value="One in a week"/>
                         </form:select>
                     </div>
                 </div>

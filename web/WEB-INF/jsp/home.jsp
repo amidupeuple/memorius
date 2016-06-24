@@ -24,7 +24,7 @@
             <ul id="navigation_wrapper" class="nav nav-pills nav-stacked">
                 <li role="presentation"><a href="/addGoal">Add goal</a></li>
                 <li role="presentation"><a href="/showGoals">Show goals</a></li>
-                <li role="presentation"><a href="/test">Test</a></li>
+                <%--<li role="presentation"><a href="/test">Test</a></li>--%>
                 <li role="presentation"><a href="javascript:formSubmit()">Logout</a></li>
             </ul>
 
@@ -44,9 +44,9 @@
 
             <c:if test="${not empty isGoalSaved}">
                 <c:if test="${isGoalSaved == 'true'}">
-                    <div class="alert alert-success">
+                    <div class="alert alert-success goalModificationAlert">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <strong>${goalName}</strong> was saved!
+                        <strong>${goalName}</strong> <span style="margin-right: 20px"> was saved!</span>
                     </div>
                 </c:if>
             </c:if>

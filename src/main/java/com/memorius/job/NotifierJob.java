@@ -64,8 +64,8 @@ public class NotifierJob extends QuartzJobBean {
 
                 for (String p: participantArr) {
                     User u = userService.findUserByUserName(p);
-                    /*LOG.info("email: " + u.getEmail());
-                    emailService.sendEmail(u.getEmail(),
+                    LOG.info("email: " + u.getEmail());
+                    /*emailService.sendEmail(u.getEmail(),
                             "memorius.notifier@gmail.com",
                             "Memorius. " + goal.getName(),
                             "Deadline for " + goal.getName() + " is " + new SimpleDateFormat("dd-MM-yyyy").format(goal.getDeadline()) + "\nPlease keep it in mind.\n\n\n \n" +
