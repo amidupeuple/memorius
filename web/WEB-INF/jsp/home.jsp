@@ -21,11 +21,11 @@
         <div class="container">
             <custom:bodyHeader/>
 
-            <ul id="navigation_wrapper" class="nav nav-pills nav-stacked">
-                <li role="presentation"><a href="/addGoal">Add goal</a></li>
-                <li role="presentation"><a href="/showGoals">Show goals</a></li>
+            <ul id="navigation_wrapper" class="nav nav-pills">
+                <li role="presentation"><a href="/addGoal"><img border="0" alt="Add goal" src="/resources/images/add.png" width="100" height="100"></a></li>
+                <li role="presentation"><a href="/showGoals"><img border="0" alt="Show goals" src="/resources/images/show.png" width="100" height="100"></a></li>
                 <%--<li role="presentation"><a href="/test">Test</a></li>--%>
-                <li role="presentation"><a href="javascript:formSubmit()">Logout</a></li>
+                <li role="presentation"><a href="javascript:formSubmit()"><img border="0" alt="Logout" src="/resources/images/logout.png" width="100" height="100"></a></li>
             </ul>
 
             <c:url value="/logout" var="logoutUrl"/>

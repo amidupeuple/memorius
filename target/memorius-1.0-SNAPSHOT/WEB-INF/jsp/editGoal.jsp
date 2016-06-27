@@ -85,20 +85,20 @@
             <div class="form-group col-lg-4">
                 <label for="notificationFreqSel">Notification frequency:</label><br/>
                 <form:select path="notificationFrequency" id="notificationFreqSel" cssClass="form-control" >
-                    <form:option value=""/>
-                    <form:option value="Day before"/>
                     <form:option value="Everyday"/>
+                    <form:option value="One in two days"/>
+                    <form:option value="One in a week"/>
                 </form:select>
 
                 <c:set var="notificationVal" value="goal.notificationFrequency"/>
                 <c:choose>
-                    <c:when test="${notificationVal eq ''}">
+                    <c:when test="${notificationVal eq 'Everyday'}">
                         <script>setSelected(0)</script>
                     </c:when>
-                    <c:when test="${notificationVal eq 'Day before'}">
+                    <c:when test="${notificationVal eq 'One in two days'}">
                         <script>setSelected(1)</script>
                     </c:when>
-                    <c:when test="${notificationVal eq 'Everyday'}">
+                    <c:when test="${notificationVal eq 'One in a week'}">
                         <script>setSelected(2)</script>
                     </c:when>
                 </c:choose>
